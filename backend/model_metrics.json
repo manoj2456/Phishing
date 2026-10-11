@@ -1,0 +1,14 @@
+{
+  "accuracy": 0.96,
+  "precision": 0.9167,
+  "recall": 1.0,
+  "f1_score": 0.9565,
+  "confusion_matrix": {
+    "true_negative": 13,
+    "false_positive": 1,
+    "false_negative": 0,
+    "true_positive": 11
+  },
+  "total_samples": 25,
+  "framework": "pure-python-ensemble"
+}

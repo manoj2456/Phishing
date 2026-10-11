@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1791729003298,
+    "url": "https://google.com",
+    "risk_score": 0,
+    "classification": "SAFE",
+    "risk_level": "LOW",
+    "confidence": 0.95,
+    "scanned_at": "2026-10-11 14:30:03",
+    "main_indicators": [
+      "No IP address detected in the hostname; valid domain name used.",
+      "HTTPS is enabled (connection traffic is encrypted)."
+    ]
+  }
+]

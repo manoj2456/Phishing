@@ -1,0 +1,757 @@
+{
+  "model": {
+    "type": "RandomForestClassifier",
+    "n_estimators": 25,
+    "max_depth": 6,
+    "feature_names": [
+      "url_length",
+      "domain_length",
+      "num_dots",
+      "num_hyphens",
+      "num_subdomains",
+      "num_special_chars",
+      "num_digits",
+      "has_at_symbol",
+      "is_ip_address",
+      "is_shortened",
+      "has_unusual_port",
+      "has_https",
+      "num_slash",
+      "num_question",
+      "num_equal",
+      "num_percent",
+      "suspicious_keyword_count",
+      "domain_depth",
+      "excessive_subdomains",
+      "misleading_brand_count"
+    ],
+    "trees": [
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 4,
+          "feature_name": "num_subdomains",
+          "threshold": 0.5,
+          "left": {
+            "leaf": true,
+            "prob": 1.0
+          },
+          "right": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "url_length",
+            "threshold": 47.5,
+            "left": {
+              "leaf": true,
+              "prob": 1.0
+            },
+            "right": {
+              "leaf": true,
+              "prob": 0.0
+            }
+          }
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 16,
+        "feature_name": "suspicious_keyword_count",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "domain_length",
+          "threshold": 32.5,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "leaf": true,
+          "prob": 1.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": true,
+          "prob": 1.0
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 12,
+          "feature_name": "num_slash",
+          "threshold": 4.5,
+          "left": {
+            "leaf": true,
+            "prob": 1.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 0.0
+          }
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": true,
+          "prob": 1.0
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 16,
+          "feature_name": "suspicious_keyword_count",
+          "threshold": 0.5,
+          "left": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "url_length",
+            "threshold": 51.5,
+            "left": {
+              "leaf": true,
+              "prob": 0.0
+            },
+            "right": {
+              "leaf": true,
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": true,
+          "prob": 1.0
+        },
+        "right": {
+          "leaf": false,
+          "feature": 19,
+          "feature_name": "misleading_brand_count",
+          "threshold": 0.5,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": true,
+          "prob": 1.0
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": true,
+          "prob": 1.0
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 16,
+        "feature_name": "suspicious_keyword_count",
+        "threshold": 0.5,
+        "left": {
+          "leaf": true,
+          "prob": 0.0
+        },
+        "right": {
+          "leaf": true,
+          "prob": 1.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 12,
+          "feature_name": "num_slash",
+          "threshold": 4.5,
+          "left": {
+            "leaf": true,
+            "prob": 1.0
+          },
+          "right": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "url_length",
+            "threshold": 47.0,
+            "left": {
+              "leaf": true,
+              "prob": 1.0
+            },
+            "right": {
+              "leaf": true,
+              "prob": 0.0
+            }
+          }
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": true,
+          "prob": 1.0
+        },
+        "right": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "domain_length",
+          "threshold": 28.0,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "domain_length",
+          "threshold": 12.5,
+          "left": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "url_length",
+            "threshold": 47.0,
+            "left": {
+              "leaf": true,
+              "prob": 1.0
+            },
+            "right": {
+              "leaf": true,
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 19,
+          "feature_name": "misleading_brand_count",
+          "threshold": 0.5,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 1,
+        "feature_name": "domain_length",
+        "threshold": 25.5,
+        "left": {
+          "leaf": false,
+          "feature": 2,
+          "feature_name": "num_dots",
+          "threshold": 4.5,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 3,
+          "feature_name": "num_hyphens",
+          "threshold": 0.5,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 12,
+          "feature_name": "num_slash",
+          "threshold": 4.5,
+          "left": {
+            "leaf": true,
+            "prob": 1.0
+          },
+          "right": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "url_length",
+            "threshold": 47.0,
+            "left": {
+              "leaf": true,
+              "prob": 1.0
+            },
+            "right": {
+              "leaf": true,
+              "prob": 0.0
+            }
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 19,
+          "feature_name": "misleading_brand_count",
+          "threshold": 0.5,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": true,
+          "prob": 1.0
+        },
+        "right": {
+          "leaf": false,
+          "feature": 19,
+          "feature_name": "misleading_brand_count",
+          "threshold": 0.5,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 4,
+          "feature_name": "num_subdomains",
+          "threshold": 0.5,
+          "left": {
+            "leaf": true,
+            "prob": 1.0
+          },
+          "right": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "url_length",
+            "threshold": 47.5,
+            "left": {
+              "leaf": true,
+              "prob": 1.0
+            },
+            "right": {
+              "leaf": true,
+              "prob": 0.0
+            }
+          }
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": true,
+          "prob": 1.0
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 3,
+          "feature_name": "num_hyphens",
+          "threshold": 0.5,
+          "left": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "url_length",
+            "threshold": 47.0,
+            "left": {
+              "leaf": true,
+              "prob": 1.0
+            },
+            "right": {
+              "leaf": true,
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 19,
+          "feature_name": "misleading_brand_count",
+          "threshold": 0.5,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": true,
+          "prob": 1.0
+        },
+        "right": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "domain_length",
+          "threshold": 28.0,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "domain_length",
+          "threshold": 12.5,
+          "left": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "url_length",
+            "threshold": 47.0,
+            "left": {
+              "leaf": true,
+              "prob": 1.0
+            },
+            "right": {
+              "leaf": true,
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": true,
+          "prob": 1.0
+        },
+        "right": {
+          "leaf": true,
+          "prob": 0.0
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 12,
+          "feature_name": "num_slash",
+          "threshold": 4.5,
+          "left": {
+            "leaf": true,
+            "prob": 1.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 0.0
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "domain_length",
+          "threshold": 28.0,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 16,
+        "feature_name": "suspicious_keyword_count",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "domain_length",
+          "threshold": 26.5,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 3,
+          "feature_name": "num_hyphens",
+          "threshold": 0.5,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        }
+      },
+      {
+        "leaf": false,
+        "feature": 11,
+        "feature_name": "has_https",
+        "threshold": 0.5,
+        "left": {
+          "leaf": false,
+          "feature": 1,
+          "feature_name": "domain_length",
+          "threshold": 12.5,
+          "left": {
+            "leaf": false,
+            "feature": 0,
+            "feature_name": "url_length",
+            "threshold": 47.0,
+            "left": {
+              "leaf": true,
+              "prob": 1.0
+            },
+            "right": {
+              "leaf": true,
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "leaf": false,
+          "feature": 19,
+          "feature_name": "misleading_brand_count",
+          "threshold": 0.5,
+          "left": {
+            "leaf": true,
+            "prob": 0.0
+          },
+          "right": {
+            "leaf": true,
+            "prob": 1.0
+          }
+        }
+      }
+    ]
+  },
+  "metrics": {
+    "accuracy": 0.96,
+    "precision": 0.9167,
+    "recall": 1.0,
+    "f1_score": 0.9565,
+    "confusion_matrix": {
+      "true_negative": 13,
+      "false_positive": 1,
+      "false_negative": 0,
+      "true_positive": 11
+    },
+    "total_samples": 25,
+    "framework": "pure-python-ensemble"
+  },
+  "feature_names": [
+    "url_length",
+    "domain_length",
+    "num_dots",
+    "num_hyphens",
+    "num_subdomains",
+    "num_special_chars",
+    "num_digits",
+    "has_at_symbol",
+    "is_ip_address",
+    "is_shortened",
+    "has_unusual_port",
+    "has_https",
+    "num_slash",
+    "num_question",
+    "num_equal",
+    "num_percent",
+    "suspicious_keyword_count",
+    "domain_depth",
+    "excessive_subdomains",
+    "misleading_brand_count"
+  ]
+}

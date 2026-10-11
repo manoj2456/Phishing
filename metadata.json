@@ -1,0 +1,6 @@
+{
+  "name": "PhishGuard – Phishing Website Detection System",
+  "description": "College CSE mini project for AI and ML-powered phishing website detection, URL heuristic feature extraction, risk scoring, and cybersecurity safety education.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
